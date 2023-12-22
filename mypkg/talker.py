@@ -12,6 +12,7 @@ n = 0
 
 def cb():
   global n
+  msg = Int16()
   msg.data = n
   pub.publish(msg)
   n += 1
