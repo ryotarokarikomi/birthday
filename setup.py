@@ -13,10 +13,10 @@ setup(
     ],
     install_requires=['setuptools'],
     zip_safe=True,
-    maintainer='Ryotaro Karikomi',
+    maintainer='merigold',
     maintainer_email='ryotaro.karikomi@gmail.com',
-    description='a package for homework 2',
-    license='BSD-3-Clause',
+    description='TODO: Package description',
+    license='TODO: License declaration',
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
