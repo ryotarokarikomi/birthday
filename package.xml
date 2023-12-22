@@ -5,7 +5,9 @@
   <version>0.0.0</version>
   <description>a package for homework 2</description>
   <maintainer email="ryotaro.karikomi@gmail.com">Ryotaro Karikomi</maintainer>
-  <license>TODO: License declaration</license>
+  <license>BSD-3-Clause</license>
+  <exec_depend>rclpy</exec_depend>
+  <exec_depend>std_msgs</exec_depend>
 
   <test_depend>ament_copyright</test_depend>
   <test_depend>ament_flake8</test_depend>
