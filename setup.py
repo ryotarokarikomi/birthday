@@ -19,9 +19,9 @@ setup(
     license='BSD-3-Clause',
     tests_require=['pytest'],
     entry_points={
-	'talker = mypkg.talker:main',
-	#'listener = mypkg.listener:main',
         'console_scripts': [
+	  'talker = mypkg.talker:main',
+	  #'listener = mypkg.listener:main',
         ],
     },
 )
