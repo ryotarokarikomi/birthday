@@ -3,11 +3,11 @@
 
 import rclpy
 from rclpy.node import Node
-from person_msgs.msg import Person 
+from person_msgs.msg import Person
 
 def cb(msg):
   global node
-  node.get_logger().info("Listen: %d" % msg)
+  node.get_logger().info("Listen: %s" % msg)
 
 rclpy.init()
 node = Node("listener")
