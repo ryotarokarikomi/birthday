@@ -3,9 +3,9 @@
 <package format="3">
   <name>mypkg</name>
   <version>0.0.0</version>
-  <description>TODO: Package description</description>
-  <maintainer email="ryotaro.karikomi@gmail.com">merigold</maintainer>
-  <license>TODO: License declaration</license>
+  <description>a package for homework 2</description>
+  <maintainer email="ryotaro.karikomi@gmail.com">Ryotaro Karikomi</maintainer>
+  <license>BSD-3-Clause</license>
   <exec_depend>rclpy</exec_depend>
   <exec_depend>std_msgs</exec_depend>
 

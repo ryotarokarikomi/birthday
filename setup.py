@@ -13,15 +13,15 @@ setup(
     ],
     install_requires=['setuptools'],
     zip_safe=True,
-    maintainer='merigold',
+    maintainer='Ryotaro Karikomi',
     maintainer_email='ryotaro.karikomi@gmail.com',
-    description='TODO: Package description',
-    license='TODO: License declaration',
+    description='a package for homework 2',
+    license='BSD-3-Clause',
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
 	    'talker = mypkg.talker:main',
-	    #'listener = mypkg.listener:main',
+	    'listener = mypkg.listener:main',
         ],
     },
 )
