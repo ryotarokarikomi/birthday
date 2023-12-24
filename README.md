@@ -21,6 +21,12 @@ $ source ~/ros2_ws/install/setup.bash
 $ ros2 launch mypkg talk_listen.launch.py
 ```
 
+## パッケージ
+### talk_listen
+ROS 2のサンプルコードです。
+
+### person_msgs
+
 ### 必要なソフトウェア
 
 ### テスト環境
