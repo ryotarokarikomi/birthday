@@ -26,6 +26,7 @@ $ ros2 launch mypkg talk_listen.launch.py
 ROS 2のサンプルコードです。
 
 ### person_msgs
+talk_listenで使う型を設定します。
 
 ### 必要なソフトウェア
 
