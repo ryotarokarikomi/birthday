@@ -30,8 +30,8 @@ jobs:
 
       - name: Build test
         run: |
-          mkdir ../ros2_ws/src -p
-          cp -r ./* ../ros2_ws/src
+          mkdir ../ros2_ws/src/birthday -p
+          cp -r ./* ../ros2_ws/src/birthday
           cd ../ros2_ws/src
           git clone https://github.com/ryotarokarikomi/birthday_msgs.git
           cd ../
