@@ -9,7 +9,7 @@ ROS 2のサンプルコードです。
 ```
 $ mkdir -p ~/ros2_ws/src
 $ cd ~/ros2_ws/src
-$ git clone https://github.com/ryotarokarikomi/robosys2023_ros2.git
+$ git clone https://github.com/ryotarokarikomi/birthday.git
 $ git clone https://github.com/ryotarokarikomi/birthday_msgs.git
 ```
 
@@ -25,7 +25,7 @@ $ source ~/ros2_ws/install/setup.bash
 $ ros2 launch mypkg birthday.launch.py
 ```
 
-## ビルドテスト [![build-test](https://github.com/ryotarokarikomi/robosys2023_ros2/actions/workflows/test.yaml/badge.svg)](https://github.com/ryotarokarikomi/robosys2023_ros2/actions/workflows/test.yaml)
+## ビルドテスト [![build-test](https://github.com/ryotarokarikomi/birthday/actions/workflows/test.yaml/badge.svg)](https://github.com/ryotarokarikomi/birthday/actions/workflows/test.yaml)
 ### テスト環境
 * Ubuntu(22.04.3 LTS)
 
