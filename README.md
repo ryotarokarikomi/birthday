@@ -27,6 +27,6 @@ $ ros2 launch mypkg talk_listen.launch.py
 ### テスト環境
 * Ubuntu(22.04.3 LTS)
 
-### 著作権
+## 著作権
 * このソフトウェアパッケージは、3条項BSDライセンスの下、再頒布および使用が許可されます。
 * © 2023 Ryotaro Karikomi
