@@ -8,7 +8,8 @@ ROS 2のサンプルコードです。
 ## mypkg
 
 ### talker.py
-* `from birthday_msgs.msg import Birthday` #Birthday型のメッセージを使用
+* `from birthday_msgs.msg import Birthday`  
+  Birthday型のメッセージを使用
 
 
 ## ビルドテスト [![build-test](https://github.com/ryotarokarikomi/birthday/actions/workflows/test.yaml/badge.svg)](https://github.com/ryotarokarikomi/birthday/actions/workflows/test.yaml)
