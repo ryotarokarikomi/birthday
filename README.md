@@ -25,10 +25,10 @@ $ ros2 launch mypkg talk_listen.launch.py
 ## パッケージ
 ### birthday
 ROS 2のサンプルコードです。  
-プログラムに記述されている誕生時刻から、現在の誕生時刻を求めます。
+talker.pyに記述されている誕生時刻から、現在の誕生時刻を求めます。
 
 ### person_msgs
-talk_listenで使う型を設定します。
+birthdayで使う型を設定します。
 
 ### 必要なソフトウェア
 
