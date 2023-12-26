@@ -1,7 +1,8 @@
-# robosys2023_ros2
+# birthday
 ***ロボットシステム学(課題2)***  
 ROS 2のサンプルコードです。  
-`birthday/mypkg/talker.py`に記述されている誕生時刻から、現在の誕生時刻を求めます。
+[こちらのパッケージ](https://github.com/ryotarokarikomi/birthday_msgs.git)でこのパッケージで使用する型を設定します。  
+`mypkg/talker.py`に記述されている誕生時刻から、現在の誕生時刻を求めます。
 
 ## 使用方法
 ### インストール
@@ -9,6 +10,7 @@ ROS 2のサンプルコードです。
 $ mkdir -p ~/ros2_ws/src
 $ cd ~/ros2_ws/src
 $ git clone https://github.com/ryotarokarikomi/robosys2023_ros2.git
+$ git clone https://github.com/ryotarokarikomi/birthday_msgs.git
 ```
 
 ### ビルド
