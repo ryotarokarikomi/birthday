@@ -20,7 +20,6 @@ class birth:
 
 def cb():
   date = datetime.datetime.now()
-  global n
   msg = Birthday()
   
   msg.name = "Ryotaro Karikomi"
