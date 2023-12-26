@@ -1,6 +1,6 @@
 # robosys2023_ros
 ***ロボットシステム学(課題2)***  
-talk_listenとperson_msgsのパッケージを含んでいます。
+birthdayとperson_msgsのパッケージを含んでいます。
 
 ## 使用方法
 ### インストール
@@ -23,8 +23,9 @@ $ ros2 launch mypkg talk_listen.launch.py
 ```
 
 ## パッケージ
-### talk_listen
-ROS 2のサンプルコードです。
+### birthday
+ROS 2のサンプルコードです。  
+プログラムに記述されている誕生時刻から、現在の誕生時刻を求めます。
 
 ### person_msgs
 talk_listenで使う型を設定します。
