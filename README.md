@@ -20,7 +20,7 @@ $ source ~/ros2_ws/install/setup.bash
 
 ### 実行
 ```
-$ ros2 launch mypkg talk_listen.launch.py
+$ ros2 launch mypkg birthday.launch.py
 ```
 
 ## ビルドテスト [![build-test](https://github.com/ryotarokarikomi/robosys2023_ros2/actions/workflows/test.yaml/badge.svg)](https://github.com/ryotarokarikomi/robosys2023_ros2/actions/workflows/test.yaml)
