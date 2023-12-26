@@ -1,6 +1,7 @@
-# robosys2023_ros
+# robosys2023_ros2
 ***ロボットシステム学(課題2)***  
-birthdayとperson_msgsのパッケージを含んでいます。
+ROS 2のサンプルコードです。  
+`birthday/mypkg/talker.py`に記述されている誕生時刻から、現在の誕生時刻を求めます。
 
 ## 使用方法
 ### インストール
@@ -21,14 +22,6 @@ $ source ~/ros2_ws/install/setup.bash
 ```
 $ ros2 launch mypkg talk_listen.launch.py
 ```
-
-## パッケージ
-### birthday
-ROS 2のサンプルコードです。  
-talker.pyに記述されている誕生時刻から、現在の誕生時刻を求めます。
-
-### person_msgs
-birthdayで使う型を設定します。
 
 ### 必要なソフトウェア
 
