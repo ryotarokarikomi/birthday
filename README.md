@@ -1,7 +1,7 @@
 # birthday
 ***ロボットシステム学(課題2)***  
 ROS 2のサンプルコードです。  
-[こちらのパッケージ](https://github.com/ryotarokarikomi/birthday_msgs.git)でこのパッケージで使用する型を設定します。  
+[birthday_msgs](https://github.com/ryotarokarikomi/birthday_msgs.git)でこのパッケージで使用する型を設定します。  
 `mypkg/talker.py`に記述されている誕生時刻から、現在の誕生時刻を求めます。
 
 ## 使用方法
