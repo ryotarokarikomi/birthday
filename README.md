@@ -23,7 +23,7 @@ $ source ~/ros2_ws/install/setup.bash
 $ ros2 launch mypkg talk_listen.launch.py
 ```
 
-### ビルドテスト 
+### ビルドテスト [![build-test](https://github.com/ryotarokarikomi/robosys2023_ros2/actions/workflows/test.yaml/badge.svg)](https://github.com/ryotarokarikomi/robosys2023_ros2/actions/workflows/test.yaml)
 ### 著作権
   * このソフトウェアパッケージは、3条項BSDライセンスの下、再頒布および使用が許可されます。
   * © 2023 Ryotaro Karikomi
