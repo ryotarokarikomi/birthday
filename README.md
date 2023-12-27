@@ -8,10 +8,14 @@ ROS 2のサンプルコードです。
 ## mypkg
 
 ### talker.py
-* `from birthday_msgs.msg import Birthday`  
+* ```
+  from birthday_msgs.msg import Birthday
+  ```  
   メッセージは[birthday_msgs](https://github.com/ryotarokarikomi/birthday_msgs.git)よりBirthday型として使用  
   
-* `pub = node.create_publisher(Birthday, "birthday", 10)`  
+* ```
+  pub = node.create_publisher(Birthday, "birthday", 10)
+  ```  
   パブリッシャをメッセージの型をBirthday、トピックをbirthdayとして定義  
   
 * ```
@@ -27,7 +31,9 @@ ROS 2のサンプルコードです。
   
 * cb関数にてbirthクラスから経過時間を求める
   
-* `node.create_timer(1, cb)`  
+* ```
+  node.create_timer(1, cb)
+  ```  
   1秒ごとにcb関数を呼び出し、経過時間を送信
 
 ### listener.py
