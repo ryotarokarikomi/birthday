@@ -12,7 +12,8 @@ ROS 2のサンプルコードです。
   メッセージは[birthday_msgs](https://github.com/ryotarokarikomi/birthday_msgs.git)よりBirthday型として使用
 * `pub = node.create_publisher(Birthday, "birthday", 10)`
   パブリッシャをメッセージの型をBirthday、トピックをbirthdayとして定義
-* ```class birth:
+* `` 
+  class birth:
   year = 2000
   month = 9
   day = 13
