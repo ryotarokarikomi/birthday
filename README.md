@@ -20,7 +20,7 @@ ROS 2のサンプルコードです。
   hour = 0
   minute = 0
   second = 0
-```
+  ```
   birthクラスに求めたい人の生年月日とその日の時刻を記述
 
 ### listener.py
