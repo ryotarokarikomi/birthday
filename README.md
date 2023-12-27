@@ -9,9 +9,17 @@ ROS 2のサンプルコードです。
 
 ### talker.py
 * `from birthday_msgs.msg import Birthday`  
-  メッセージは[birthday_msgs](https://github.com/ryotarokarikomi/birthday_msgs.git)をBirthday型として使用
-* トピックはbirthday
-* birthクラスに求めた
+  メッセージは[birthday_msgs](https://github.com/ryotarokarikomi/birthday_msgs.git)よりBirthday型として使用
+* `pub = node.create_publisher(Birthday, "birthday", 10)`
+  パブリッシャをメッセージの型をBirthday、トピックをbirthdayとして定義
+* `class birth:
+  year = 2000
+  month = 9
+  day = 13
+  hour = 0
+  minute = 0
+  second = 0`
+  birthクラスに求めたい人の生年月日とその日の時刻を記述
 
 ### listener.py
 * 
