@@ -9,9 +9,9 @@ ROS 2のサンプルコードです。
 
 ### talker.py
 * `from birthday_msgs.msg import Birthday`  
-  メッセージは[birthday_msgs](https://github.com/ryotarokarikomi/birthday_msgs.git)よりBirthday型として使用
+  メッセージは[birthday_msgs](https://github.com/ryotarokarikomi/birthday_msgs.git)よりBirthday型として使用  
 * `pub = node.create_publisher(Birthday, "birthday", 10)`
-  パブリッシャをメッセージの型をBirthday、トピックをbirthdayとして定義
+  パブリッシャをメッセージの型をBirthday、トピックをbirthdayとして定義  
 * ```
   class birth:
   year = 2000
