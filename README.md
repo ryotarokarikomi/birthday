@@ -2,12 +2,16 @@
 ***ロボットシステム学(課題2)***  
 ROS 2のサンプルコードです。  
 [birthday_msgs](https://github.com/ryotarokarikomi/birthday_msgs.git)でこのパッケージで使用する型を設定しています。  
+生年月日とその日の時刻から現在までの経過時間を求めます。
 
 
 ## mypkg
 
 ### talker.py
-* birthクラスに記述されている生年月日とその日の時刻から、現在までの経過時間をbirthdayトピックを通じて送信
+* `from birthday_msgs.msg import Birthday`  
+  メッセージは[birthday_msgs](https://github.com/ryotarokarikomi/birthday_msgs.git)をBirthday型として使用
+* トピックはbirthday
+* birthクラスに求めた
 
 ### listener.py
 * 
