@@ -33,6 +33,7 @@ jobs:
           mkdir ../ros2_ws/src -p
           cp -r ./* ../ros2_ws/src
           cd ../ros2_ws/src
+	  git clone https://github.com/ryotarokarikomi/time_msgs.git
           rosdep update
           rosdep install -r -y --from-paths --ignore-src ./
           source /opt/ros/humble/setup.bash
