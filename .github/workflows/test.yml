@@ -37,4 +37,4 @@ jobs:
           rosdep install -r -y --from-paths --ignore-src ./
           source /opt/ros/humble/setup.bash
           colcon build --symlink-install
-        shell: bash  bash -xv ./src/mypkg/test/test.bash /root
+        shell: bash
