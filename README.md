@@ -11,12 +11,12 @@ ROS 2のサンプルコードです。
 * ```
   from birthday_msgs.msg import Birthday
   ```  
-  * メッセージは[birthday_msgs](https://github.com/ryotarokarikomi/birthday_msgs.git)よりBirthday型として使用  
+  * メッセージは[birthday_msgs](https://github.com/ryotarokarikomi/birthday_msgs.git)より`Birthday`型として使用  
 <br><br>
 * ```
   pub = node.create_publisher(Birthday, "birthday", 10)
   ```  
-  * パブリッシャをメッセージの型をBirthday、トピックをbirthdayとして定義  
+  * パブリッシャをメッセージの型を`Birthday`、トピックを`birthday`として定義  
 <br><br>
 * ```
   class birth:
@@ -27,17 +27,25 @@ ROS 2のサンプルコードです。
     minute = 0
     second = 0
   ```
-  * birthクラスに求めたい人の生年月日とその日の時刻を記述
+  * `birth`クラスに求めたい人の生年月日とその日の時刻を記述
 <br><br>
-* cb関数にてbirthクラスから経過時間を求める
+* `cb`関数にて`birth`クラスから経過時間を求める
 <br><br>
 * ```
   node.create_timer(1, cb)
   ```  
-  * 1秒ごとにcb関数を呼び出し、経過時間を送信
+  * 1秒ごとに`cb`関数を呼び出し、経過時間を送信
 
 ### listener.py
-* 
+* ```
+  from birthday_msgs.msg import Birthday
+  ```  
+  * `talker.py`と同様にメッセージは[birthday_msgs](https://github.com/ryotarokarikomi/birthday_msgs.git)より`Birthday`型として使用  
+<br><br>
+* `cb`関数にてメッセージのログを表示
+<br><br>
+* `sub = node.create_subscription(Birthday, "birthday", cb, 10)`  
+  サブスクライバを型を`Birthday`、トピックを`birthday`として定義し、cb関数に受け取った`Birthday`型のメッセージを渡す。 
 
 
 ## ビルドテスト [![build-test](https://github.com/ryotarokarikomi/birthday/actions/workflows/test.yaml/badge.svg)](https://github.com/ryotarokarikomi/birthday/actions/workflows/test.yaml)

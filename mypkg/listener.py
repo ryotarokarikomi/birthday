@@ -11,6 +11,6 @@ def cb(msg):
 
 rclpy.init()
 node = Node("listener")
-pub = node.create_subscription(Birthday, "birthday", cb, 10)
+sub = node.create_subscription(Birthday, "birthday", cb, 10)
 
 rclpy.spin(node)
