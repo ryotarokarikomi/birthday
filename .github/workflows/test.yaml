@@ -30,10 +30,10 @@ jobs:
 
       - name: Build test
         run: |
-          mkdir ../ros2_ws/src/birthday -p
-          cp -r ./* ../ros2_ws/src/birthday
+          mkdir ../ros2_ws/src/stop_watch -p
+          cp -r ./* ../ros2_ws/src/stop_watch
           cd ../ros2_ws/src
-          git clone https://github.com/ryotarokarikomi/birthday_msgs.git
+          git clone https://github.com/ryotarokarikomi/time_msgs.git
           cd ../
           rosdep update
           rosdep install -r -y --from-paths --ignore-src ./
