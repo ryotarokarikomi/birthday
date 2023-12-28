@@ -11,12 +11,12 @@ ROS 2のサンプルコードです。
 * ```
   from birthday_msgs.msg import Birthday
   ```  
-  メッセージは[birthday_msgs](https://github.com/ryotarokarikomi/birthday_msgs.git)よりBirthday型として使用  
+  * メッセージは[birthday_msgs](https://github.com/ryotarokarikomi/birthday_msgs.git)よりBirthday型として使用  
   
 * ```
   pub = node.create_publisher(Birthday, "birthday", 10)
   ```  
-  パブリッシャをメッセージの型をBirthday、トピックをbirthdayとして定義  
+  * パブリッシャをメッセージの型をBirthday、トピックをbirthdayとして定義  
   
 * ```
   class birth:
@@ -27,14 +27,14 @@ ROS 2のサンプルコードです。
     minute = 0
     second = 0
   ```
-  birthクラスに求めたい人の生年月日とその日の時刻を記述
+  * birthクラスに求めたい人の生年月日とその日の時刻を記述
   
 * cb関数にてbirthクラスから経過時間を求める
   
 * ```
   node.create_timer(1, cb)
   ```  
-  1秒ごとにcb関数を呼び出し、経過時間を送信
+  * 1秒ごとにcb関数を呼び出し、経過時間を送信
 
 ### listener.py
 * 
