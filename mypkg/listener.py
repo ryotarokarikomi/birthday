@@ -3,7 +3,7 @@
 
 import rclpy
 from rclpy.node import Node
-from birthday_msgs.msg import Birthday
+from timer_msgs.msg import Timer
 
 def cb(msg):
   global node
@@ -11,6 +11,6 @@ def cb(msg):
 
 rclpy.init()
 node = Node("listener")
-sub = node.create_subscription(Birthday, "birthday", cb, 10)
+sub = node.create_subscription(Timer, "timer", cb, 10)
 
 rclpy.spin(node)

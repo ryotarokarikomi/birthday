@@ -2,42 +2,31 @@
 # SPDX-License-Identifier: BSD-3-Clause
 
 import rclpy
-import datetime
 from rclpy.node import Node
-from birthday_msgs.msg import Birthday
+from timer_msgs.msg import Timer
 
 rclpy.init()
 node = Node("talker")
-pub = node.create_publisher(Birthday, "birthday", 10)
+pub = node.create_publisher(Timer, "timer", 10)
+sec = 0
 
-class birth:
-  name = "Ryotaro Karikomi"
-  year = 2000
-  month = 9
-  day = 13
-  hour = 0
-  minute = 0
+class timer():
   second = 0
+  minute = 0
+  hour = 0
 
 def cb():
-  date = datetime.datetime.now()
-  msg = Birthday()
-  
-  msg.name = birth.name
-  age = date.year - birth.year
-  month = date.month - birth.month
-  day = date.day - birth.day
-  hour = date.hour  - birth.hour
-  minute = date.minute - birth.minute
-  second = date.second - birth.second
+  global sec
+  msg = Timer()
+  timer.second = sec
 
-  msg.age = age
-  msg.month = month
-  msg.day = day
-  msg.hour = hour
-  msg.minute = minute
-  msg.second = second
+  msg.sec = sec
+  msg.second = timer.second
+  msg.minute = timer.minute
+  msg.hour = timer.hour
+
   pub.publish(msg)
+  sec += 1
 
 node.create_timer(1, cb)
 rclpy.spin(node)
