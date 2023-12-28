@@ -17,7 +17,7 @@ ROS 2のサンプルコードです。
   pub = node.create_publisher(Birthday, "birthday", 10)
   ```  
   * パブリッシャをメッセージの型をBirthday、トピックをbirthdayとして定義  
-  
+<br><br>
 * ```
   class birth:
     year = 2000
@@ -28,9 +28,9 @@ ROS 2のサンプルコードです。
     second = 0
   ```
   * birthクラスに求めたい人の生年月日とその日の時刻を記述
-  
+<br><br>
 * cb関数にてbirthクラスから経過時間を求める
-  
+<br><br>
 * ```
   node.create_timer(1, cb)
   ```  
