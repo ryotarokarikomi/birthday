@@ -15,7 +15,7 @@ ROS 2のサンプルコードです。
     minute = 0
     second = 0
   ```
-  `mypkg/talker.py`のbirthクラスを自分の生年月日とその日の時刻に変更してください。
+  `mypkg/talker.py`の`birth`クラスを自分の生年月日とその日の時刻に変更してください。
 
 * ターミナル1
   ```
@@ -27,7 +27,7 @@ ROS 2のサンプルコードです。
   $ ros2 run mypkg listener
   ```
 
-* ターミナル2にbirthクラスに記述した生年月日とその日の時刻から現在までの経過時間が表示されます。
+* ターミナル2に`birth`クラスに記述した生年月日とその日の時刻から現在までの経過時間が表示されます。
 
 ## ビルドテスト [![build-test](https://github.com/ryotarokarikomi/birthday/actions/workflows/test.yaml/badge.svg)](https://github.com/ryotarokarikomi/birthday/actions/workflows/test.yaml)
 
