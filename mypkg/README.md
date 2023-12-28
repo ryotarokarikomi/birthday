@@ -1,4 +1,6 @@
-# talker.py
+# mypkg
+
+## talker.py
 * ```
   from birthday_msgs.msg import Birthday
   ```  
@@ -27,7 +29,7 @@
   ```  
   * 1秒ごとに`cb`関数を呼び出し、経過時間を送信
 <br><br>
-## 実行
+### 実行
 * 以下のコマンドで実行
   ```
   $ ros2 run mypkg talker
@@ -38,7 +40,7 @@
   ```
   何も表示されていませんが、メッセージを送信しています。
 
-# listener.py
+## listener.py
 * ```
   from birthday_msgs.msg import Birthday
   ```  
@@ -49,7 +51,7 @@
 * `sub = node.create_subscription(Birthday, "birthday", cb, 10)`  
   * メッセージの型を`Birthday`、トピックを`birthday`としてサブスクライバを定義し、受け取った`Birthday`型のメッセージをcb関数に渡す
 <br><br>
-## 実行
+### 実行
 * 以下のコマンドで実行
   ```
   ros2 run mypkg listener
