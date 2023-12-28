@@ -16,7 +16,7 @@ ROS 2のサンプルコードです。
 * ```
   pub = node.create_publisher(Birthday, "birthday", 10)
   ```  
-  * パブリッシャをメッセージの型を`Birthday`、トピックを`birthday`として定義
+  * メッセージの型を`Birthday`、トピックを`birthday`としてパブリッシャを定義
 <br><br>
 * ```
   class birth:
@@ -56,7 +56,7 @@ ROS 2のサンプルコードです。
 * `cb`関数にてメッセージのログを表示
 <br><br>
 * `sub = node.create_subscription(Birthday, "birthday", cb, 10)`  
-  * サブスクライバのメッセージの型を`Birthday`、トピックを`birthday`として定義し、受け取った`Birthday`型のメッセージをcb関数に渡す
+  * メッセージの型を`Birthday`、トピックを`birthday`としてサブスクライバを定義し、受け取った`Birthday`型のメッセージをcb関数に渡す
 <br><br>
 ### 実行
 * 以下のコマンドで実行
