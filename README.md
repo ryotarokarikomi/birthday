@@ -56,7 +56,7 @@ ROS 2のサンプルコードです。
 * `cb`関数にてメッセージのログを表示
 <br><br>
 * `sub = node.create_subscription(Birthday, "birthday", cb, 10)`  
-  * サブスクライバを型を`Birthday`、トピックを`birthday`として定義し、受け取った`Birthday`型のメッセージをcb関数に渡す
+  * サブスクライバのメッセージの型を`Birthday`、トピックを`birthday`として定義し、受け取った`Birthday`型のメッセージをcb関数に渡す
 <br><br>
 ### 実行
 * 以下のコマンドで実行
