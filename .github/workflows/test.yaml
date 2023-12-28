@@ -1,38 +1,15 @@
 name: test
-on:
-  push:
-    branches:
-      - main
-    paths-ignore:
-      - '**.md'
-  pull_request:
-    branches:
-      - main
-    paths-ignore:
-      - '**.md'
-
+on: push
 jobs:
-  build-and-test:
-    runs-on: ubuntu-latest
-    container: osrf/ros:humble-desktop
-    strategy:
-      matrix:
-        rosdistro:
-          - humble
-
+  test:
+    runs-on: ubuntu-22.04
+    container: ryotarokarikomi/ubuntu22.04-ros2:latest
     steps:
-      - name: Check out repository
-        uses: actions/checkout@v3
-
-      - name: Apt update
-        run: |
-          sudo apt update -y
-
-      - name: test
+      - uses: actions/checkout@v2
+      - name: build and test
         run: |
 	  rysync -av ./ /root/ros2_ws/src/mypkg/
           cd root/ros2_ws/
           rosdep update
           rosdep install -r -y --from-paths --ignore-src ./
 	  bash -xv ./src/mypkg/test/test.bash /root
-        shell: bash
