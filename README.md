@@ -1,23 +1,11 @@
-# birthday
+# stop_watch
 ***ロボットシステム学(課題2)***  
 ROS 2のサンプルコードです。  
-[birthday_msgs](https://github.com/ryotarokarikomi/birthday_msgs.git)でこのパッケージで使用する型を設定しています。  
-生年月日とその日の時刻から現在までの経過時間を求めます。
+[stop_watch_msgs]()でこのパッケージで使用する型を設定しています。  
+ストップウォッチです。
 
 
 ## 使い方
-* ```
-  class birth:
-    name = "Ryotaro Karikomi"
-    year = 2000
-    month = 9
-    day = 13
-    hour = 0
-    minute = 0
-    second = 0
-  ```
-  [mypkg/talker.py](https://github.com/ryotarokarikomi/birthday/blob/main/mypkg/talker.py)の`birth`クラスを任意の人物の名前、生年月日とその日の時刻に変更してください。
-
 * ターミナル1  
   以下のコマンドでtalkerを実行します。
   ```
@@ -30,9 +18,9 @@ ROS 2のサンプルコードです。
   $ ros2 run mypkg listener
   ```
 
-* ターミナル2に`birth`クラスに記述した生年月日とその日の時刻から現在までの経過時間が表示されます。
+* 
 
-## ビルドテスト [![build-test](https://github.com/ryotarokarikomi/birthday/actions/workflows/test.yaml/badge.svg)](https://github.com/ryotarokarikomi/birthday/actions/workflows/test.yaml)
+## ビルドテスト [![build-test]()]()
 
 
 ### テスト環境

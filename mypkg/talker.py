@@ -3,37 +3,37 @@
 
 import rclpy
 from rclpy.node import Node
-from timer_msgs.msg import Timer
+from stop_watch_msgs.msg import Time
 
 rclpy.init()
 node = Node("talker")
-pub = node.create_publisher(Timer, "timer", 10)
+pub = node.create_publisher(Time, "time", 10)
 sec = 1
 
-class timer():
+class time():
   second = 1
   minute = 0
   hour = 0
 
 def cb():
   global sec
-  msg = Timer()
+  msg = Time()
 
-  if timer.second == 60:
-    timer.minute += 1
-    timer.second = 0
+  if time.second == 60:
+    time.minute += 1
+    time.second = 0
 
-  if timer.minute == 60:
-    timer.hour += 1
-    timer.minute = 0
+  if time.minute == 60:
+    time.hour += 1
+    time.minute = 0
 
   msg.sec = sec
-  msg.second = timer.second
-  msg.minute = timer.minute
-  msg.hour = timer.hour
+  msg.second = time.second
+  msg.minute = time.minute
+  msg.hour = time.hour
 
   pub.publish(msg)
-  timer.second += 1
+  time.second += 1
   sec += 1
 
 node.create_timer(1, cb)
