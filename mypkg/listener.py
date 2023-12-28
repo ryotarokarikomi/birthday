@@ -7,7 +7,7 @@ from timer_msgs.msg import Timer
 
 def cb(msg):
   global node
-  node.get_logger().info("%s" % msg)
+  node.get_logger().info("%2s" % msg)
 
 rclpy.init()
 node = Node("listener")
