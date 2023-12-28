@@ -12,7 +12,7 @@ ROS 2のサンプルコードです。
   from birthday_msgs.msg import Birthday
   ```  
   * メッセージは[birthday_msgs](https://github.com/ryotarokarikomi/birthday_msgs.git)よりBirthday型として使用  
-<br>
+<br><br>
 * ```
   pub = node.create_publisher(Birthday, "birthday", 10)
   ```  
@@ -28,9 +28,9 @@ ROS 2のサンプルコードです。
     second = 0
   ```
   * birthクラスに求めたい人の生年月日とその日の時刻を記述
-<br>
+<br><br>
 * cb関数にてbirthクラスから経過時間を求める
-<br>
+<br><br>
 * ```
   node.create_timer(1, cb)
   ```  
