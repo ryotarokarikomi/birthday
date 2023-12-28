@@ -1,7 +1,7 @@
 # stop_watch
 ***ロボットシステム学(課題2)***  
 ROS 2のサンプルコードです。  
-[time_msgs]()でこのパッケージで使用する型を設定しています。  
+[time_msgs](https://github.com/ryotarokarikomi/time_msgs.git)でこのパッケージで使用する型を設定しています。  
 ストップウォッチです。
 
 
