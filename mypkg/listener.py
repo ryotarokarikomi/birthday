@@ -3,7 +3,7 @@
 
 import rclpy
 from rclpy.node import Node
-from stopwatch_msgs.msg import Time
+from time_msgs.msg import Time
 
 def cb(msg):
   global node

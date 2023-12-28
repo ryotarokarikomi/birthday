@@ -3,7 +3,7 @@
 
 import rclpy
 from rclpy.node import Node
-from stop_watch_msgs.msg import Time
+from time_msgs.msg import Time
 
 rclpy.init()
 node = Node("talker")
