@@ -15,7 +15,7 @@ ROS 2のサンプルコードです。
     minute = 0
     second = 0
   ```
-  `mypkg/talker.py`の`birth`クラスを任意の人物の生年月日とその日の時刻に変更してください。
+  `[mypkg/talker.py](https://github.com/ryotarokarikomi/birthday/blob/main/mypkg/talker.py)`の`birth`クラスを任意の人物の生年月日とその日の時刻に変更してください。
 
 * ターミナル1  
   以下のコマンドでtalkerを実行します。
