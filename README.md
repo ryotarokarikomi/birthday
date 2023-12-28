@@ -45,7 +45,7 @@ ROS 2のサンプルコードです。
   ```
   (何も表示されない)
   ```
-  何も表示されないが、メッセージを送信している。
+  何も表示されていませんが、メッセージを送信しています。
 
 ## listener.py
 * ```
@@ -67,7 +67,7 @@ ROS 2のサンプルコードです。
   ```
   (何も表示されない)
   ```
-  こちらも何も表示されないが、メッセージ受信の待機状態になっている。
+  こちらも何も表示されていませんが、メッセージ受信の待機状態になっています。
 
 
 ## ビルドテスト [![build-test](https://github.com/ryotarokarikomi/birthday/actions/workflows/test.yaml/badge.svg)](https://github.com/ryotarokarikomi/birthday/actions/workflows/test.yaml)
