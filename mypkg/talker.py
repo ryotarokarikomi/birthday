@@ -11,6 +11,7 @@ node = Node("talker")
 pub = node.create_publisher(Birthday, "birthday", 10)
 
 class birth:
+  name = "Ryotaro Karikomi"
   year = 2000
   month = 9
   day = 13
@@ -22,7 +23,7 @@ def cb():
   date = datetime.datetime.now()
   msg = Birthday()
   
-  msg.name = "Ryotaro Karikomi"
+  msg.name = birth.name
   age = date.year - birth.year
   month = date.month - birth.month
   day = date.day - birth.day

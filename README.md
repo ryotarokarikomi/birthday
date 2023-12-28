@@ -8,6 +8,7 @@ ROS 2のサンプルコードです。
 ## 使い方
 * ```
   class birth:
+    name = "Ryotaro Karikomi"
     year = 2000
     month = 9
     day = 13

@@ -13,6 +13,7 @@
 <br><br>
 * ```
   class birth:
+    name = "Ryotaro Karikomi"
     year = 2000
     month = 9
     day = 13
