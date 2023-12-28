@@ -31,6 +31,8 @@ jobs:
       - name: Build test
         run: |
           mkdir ../ros2_ws/src -p
+	  cd ../ros2_ws/src
+	  cd ../../
           cp -r ./* ../ros2_ws/src
           cd ../ros2_ws/src
           rosdep update
