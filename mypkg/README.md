@@ -54,7 +54,7 @@
 ### 実行
 * 以下のコマンドで実行
   ```
-  ros2 run mypkg listener
+  $ ros2 run mypkg listener
   ```
 * 結果
   ```
