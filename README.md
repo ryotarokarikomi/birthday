@@ -51,7 +51,7 @@ ROS 2のサンプルコードです。
 * ```
   from birthday_msgs.msg import Birthday
   ```  
-  * `talker.py`と同様にメッセージは[birthday_msgs](https://github.com/ryotarokarikomi/birthday_msgs.git)より`Birthday`型として使用  
+  * `talker.py`と同様にメッセージは[birthday_msgs](https://github.com/ryotarokarikomi/birthday_msgs.git)より`Birthday`型として使用
 <br><br>
 * `cb`関数にてメッセージのログを表示
 <br><br>
