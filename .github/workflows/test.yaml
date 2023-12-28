@@ -1,4 +1,4 @@
-name: build-test
+name: test
 on:
   push:
     branches:
@@ -28,13 +28,11 @@ jobs:
         run: |
           sudo apt update -y
 
-      - name: Build test
+      - name: test
         run: |
-          mkdir ../ros2_ws/src/stop_watch -p
-          cp -r ./* ../ros2_ws/src/stop_watch
-          cd ../ros2_ws/
+	  rysync -av ./ /root/ros2_ws/src/mypkg/
+          cd root/ros2_ws/
           rosdep update
           rosdep install -r -y --from-paths --ignore-src ./
-          source /opt/ros/humble/setup.bash
-          colcon build --symlink-install
+	  bash -xv ./src/mypkg/test/test.bash /root
         shell: bash
