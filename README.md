@@ -12,7 +12,7 @@ ROS 2のサンプルコードです。
   from birthday_msgs.msg import Birthday
   ```  
   * メッセージは[birthday_msgs](https://github.com/ryotarokarikomi/birthday_msgs.git)よりBirthday型として使用  
-  
+<br><br>
 * ```
   pub = node.create_publisher(Birthday, "birthday", 10)
   ```  
