@@ -17,13 +17,13 @@ ROS 2のサンプルコードです。
   ```
   `mypkg/talker.py`の`birth`クラスを任意の人物の生年月日とその日の時刻に変更してください。
 
-* ターミナル1
+* ターミナル1  
   以下のコマンドでtalkerを実行します。
   ```
   $ ros2 run mypkg talker
   ```
 
-* ターミナル2
+* ターミナル2  
   以下のコマンドでlistenerを実行します。
   ```
   $ ros2 run mypkg listener
