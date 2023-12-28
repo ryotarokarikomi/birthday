@@ -11,12 +11,12 @@ ROS 2のサンプルコードです。
 * ```
   from birthday_msgs.msg import Birthday
   ```  
-  * メッセージは[birthday_msgs](https://github.com/ryotarokarikomi/birthday_msgs.git)より`Birthday`型として使用  
+  * メッセージは[birthday_msgs](https://github.com/ryotarokarikomi/birthday_msgs.git)より`Birthday`型として使用
 <br><br>
 * ```
   pub = node.create_publisher(Birthday, "birthday", 10)
   ```  
-  * パブリッシャをメッセージの型を`Birthday`、トピックを`birthday`として定義  
+  * パブリッシャをメッセージの型を`Birthday`、トピックを`birthday`として定義
 <br><br>
 * ```
   class birth:
