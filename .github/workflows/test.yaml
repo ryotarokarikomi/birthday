@@ -32,7 +32,9 @@ jobs:
         run: |
           mkdir ../ros2_ws/src/stop_watch -p
           cp -r ./* ../ros2_ws/src/stop_watch
-          cd ../ros2_ws
+	  cd ../ros2_ws/src/
+	  git clone https://github.com/ryotarokarikomi/time_msgs.git
+          cd ../
           rosdep update
           rosdep install -r -y --from-paths --ignore-src ./
           source /opt/ros/humble/setup.bash
