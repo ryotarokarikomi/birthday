@@ -1,17 +1,40 @@
-name: test
-on: push
+name: build-and-test
+on:
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - '**.md'
+  pull_request:
+    branches:
+      - main
+    paths-ignore:
+      - '**.md'
+
 jobs:
-  test:
-    runs-on: ubuntu-22.04
-    container: ryuichiueda/ubuntu22.04-ros2:latest
+  build-and-test:
+    runs-on: ubuntu-latest
+    container: osrf/ros:humble-desktop
     strategy:
       matrix:
+        rosdistro:
+          - humble
+
     steps:
-      - uses: actions/checkout@v2
-      - name: build and test
+      - name: Check out repository
+        uses: actions/checkout@v3
+
+      - name: Apt update
         run: |
-	  rysync -av ./ /root/ros2_ws/src/mypkg/
-          cd root/ros2_ws/
+          sudo apt update -y
+
+      - name: Build test
+        run: |
+          mkdir ../ros2_ws/src -p
+          cp -r ./* ../ros2_ws/src
+          cd ../ros2_ws
           rosdep update
           rosdep install -r -y --from-paths --ignore-src ./
-	  bash -xv ./src/mypkg/test/test.bash /root
+          source /opt/ros/humble/setup.bash
+          colcon build --symlink-install
+        shell: bash  bash -xv ./src/mypkg/test/test.bash /root
