@@ -40,5 +40,5 @@ jobs:
           source /opt/ros/humble/setup.bash
           colcon build --symlink-install
           source install/setup.bash
-          timeout 10 ros2 launch mypkg stop_watch.launch.py > /tmp/mypkg.log
+          timeout 10 ros2 launch mypkg stop_watch.launch.py
         shell: bash
