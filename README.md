@@ -70,11 +70,14 @@ ROS 2のサンプルコードです。
 * メッセージの型を符号なし64ビット整数、トピックを`/time`としてサブスクライバを定義
 * トピックを通じてメッセージを受信
 
+## 必要なソフトウェア
+* Python
+  * テスト済み: 3.7 ~ 3.10
+
 ## ビルドテスト [![build_and_test](https://github.com/ryotarokarikomi/stop_watch/actions/workflows/test.yml/badge.svg)](https://github.com/ryotarokarikomi/stop_watch/actions/workflows/test.yml)
 ### テスト環境
 * Ubuntu(22.04.3 LTS)
-* Python
-  * テスト済み: 3.7 ~ 3.10
+* ROS 2 foxy
 
 
 ## 著作権
