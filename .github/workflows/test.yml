@@ -35,6 +35,6 @@ jobs:
           rosdep update
           rosdep install -r -y --from-paths --ignore-src ./
           source /opt/ros/humble/setup.bash
-	  cd ~/ros2_ws/src/test
-	  ./test.bash
+          cd ~/ros2_ws/src/test
+          ./test.bash
         shell: bash
