@@ -35,7 +35,7 @@ ROS 2のサンプルコードです。
   ・
   ```
 ## ros2 launch
-* 端末1
+* 端末1  
   以下のコマンドで実行します。
   ```
   $ ros2 launch mypkg time.lauch.py
