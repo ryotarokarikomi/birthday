@@ -1,7 +1,7 @@
 #!/bin/bash
 
 dir=~
-[ "$1" != "" ] && dir=i"$1"
+[ "$1" != "" ] && dir="$1"
 
 cd $dir/ros2_ws/src
 git clone https://github.com/ryotarokarikomi/time_msgs.git
