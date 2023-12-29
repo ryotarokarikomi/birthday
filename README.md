@@ -1,4 +1,5 @@
-# stop_watch
+# stop_watch[![build_and_test](https://github.com/ryotarokarikomi/stop_watch/actions/workflows/test.yml/badge.svg)](https://github.com/ryotarokarikomi/stop_watch/actions/workflows/test.yml)
+### テスト環境
 ***ロボットシステム学(課題2)***  
 ROS 2のサンプルコードです。  
 [time_msgs](https://github.com/ryotarokarikomi/time_msgs.git)でこのパッケージで使用する型を設定しています。  
@@ -74,8 +75,6 @@ ROS 2のサンプルコードです。
 * Python
   * テスト済み: 3.7 ~ 3.10
 
-## ビルドテスト [![build_and_test](https://github.com/ryotarokarikomi/stop_watch/actions/workflows/test.yml/badge.svg)](https://github.com/ryotarokarikomi/stop_watch/actions/workflows/test.yml)
-### テスト環境
 * Ubuntu(22.04.3 LTS)
 * ROS 2 foxy
 
