@@ -1,5 +1,6 @@
 #!/bin/bash
 
+source /opt/ros/humble/setup.bash
 dir=~
 [ "$1" != "" ] && dir="$1"
 
