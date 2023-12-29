@@ -30,6 +30,9 @@ ROS 2のサンプルコードです。
   [INFO] [1703777644.551553361] [listener]: time_msgs.msg.Time(hour=0, minute=0, second=8, sec=8)
   [INFO] [1703777645.552878640] [listener]: time_msgs.msg.Time(hour=0, minute=0, second=9, sec=9)
   [INFO] [1703777646.552502583] [listener]: time_msgs.msg.Time(hour=0, minute=0, second=10, sec=10)
+  ・
+  ・
+  ・
   ```
 ## ros2 launch
 * 端末1
@@ -53,6 +56,9 @@ ROS 2のサンプルコードです。
   [listener-2] [INFO] [1703777807.539539262] [listener]: time_msgs.msg.Time(hour=0, minute=0, second=8, sec=8)
   [listener-2] [INFO] [1703777808.538801828] [listener]: time_msgs.msg.Time(hour=0, minute=0, second=9, sec=9)
   [listener-2] [INFO] [1703777809.539169773] [listener]: time_msgs.msg.Time(hour=0, minute=0, second=10, sec=10)
+  ・
+  ・
+  ・
   ```
 
 # ノード
@@ -67,8 +73,11 @@ ROS 2のサンプルコードです。
 ## ビルドテスト [![build_and_test](https://github.com/ryotarokarikomi/stop_watch/actions/workflows/test.yml/badge.svg)](https://github.com/ryotarokarikomi/stop_watch/actions/workflows/test.yml)
 ### テスト環境
 * Ubuntu(22.04.3 LTS)
+* Python
+  * テスト済み: 3.7 ~ 3.10
 
 
 ## 著作権
 * このソフトウェアパッケージは、3条項BSDライセンスの下、再頒布および使用が許可されます。
-* © 2023 Ryotaro Karikomi
+* このパッケージの`test/test.bash`の一部のコードは、下記のスライド（CC-BY-SA 4.0 by Ryuichi Ueda）のものを、本人の許可を得て自身の著作としたものです。
+  * [ryuichiueda/my_slides robosys_2022](https://github.com/ryuichiueda/my_slides/tree/master/robosys_2022) © 2023 Ryotaro Karikomi
