@@ -1,44 +1,15 @@
-name: build-and-test
-on:
-  push:
-    branches:
-      - main
-    paths-ignore:
-      - '**.md'
-  pull_request:
-    branches:
-      - main
-    paths-ignore:
-      - '**.md'
-
+name: test
+on: push
 jobs:
-  build-and-test:
-    runs-on: ubuntu-latest
-    container: osrf/ros:humble-desktop
-    strategy:
-      matrix:
-        rosdistro:
-          - humble
-
+  test:
+    runs-on: ubuntu-22.04
+    container: ryuichiueda/ubuntu22.04-ros2:latest
     steps:
-      - name: Check out repository
-        uses: actions/checkout@v3
-
-      - name: Apt update
-        run: |
-          sudo apt update -y
-
-      - name: Build test
-        run: |
-          mkdir ../ros2_ws/src/stop_watch -p
-          cp -r ./* ../ros2_ws/src/stop_watch
-          cd ../ros2_ws/src
-          git clone https://github.com/ryotarokarikomi/time_msgs.git
-          cd ../
-          rosdep update
-          rosdep install -r -y --from-paths --ignore-src ./
-          source /opt/ros/humble/setup.bash
-          colcon build --symlink-install
-          cd test/
-          ./test.bash
-        shell: bash
+      - uses: actions/checkout@v2
+      - name: build and test
+	run: |
+	  rsync -av ./ /root/ros2_ws/src/mypkg/
+	  cd /root/ros_ws
+	  rosdep update
+	  rosdep install -i --from-path src --rosdistro humble -y
+	  bash -xv ./src/mypkg/test/test.bash /root
