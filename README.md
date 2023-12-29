@@ -64,7 +64,7 @@ ROS 2のサンプルコードです。
 * メッセージの型を符号なし64ビット整数、トピックを`/time`としてサブスクライバを定義
 * トピックを通じてメッセージを受信
 
-## ビルドテスト [![build-test]()]()
+## ビルドテスト [![build_and_test](https://github.com/ryotarokarikomi/stop_watch/actions/workflows/test.yml/badge.svg)](https://github.com/ryotarokarikomi/stop_watch/actions/workflows/test.yml)
 ### テスト環境
 * Ubuntu(22.04.3 LTS)
 
