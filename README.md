@@ -41,7 +41,7 @@ ROS 2のサンプルコードです。
 * 端末1  
   以下のコマンドで実行し、ストップウォッチを開始します。
   ```
-  $ ros2 launch stopwatch stopwatch.lauch.py
+  $ ros2 launch stopwatch stopwatch.launch.py
   ```
 * 実行結果
   ```
