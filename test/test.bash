@@ -1,4 +1,6 @@
 #!/bin/bash
+# SPDX-FileCopyrightText: 2023 Ryotaro Karikomi
+# SPDX-License-Identifier: BSD-3-Clause
 
 source /opt/ros/humble/setup.bash
 dir=~
