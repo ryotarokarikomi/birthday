@@ -11,12 +11,13 @@ ROS 2のサンプルコードです。
   以下のコマンドでlistenerを実行し、ストップウォッチを待機状態にします。
   ```
   $ ros2 run stopwatch listener
-  ```
   (何も表示されません) 
+  ```
 * 端末2  
   別の端末で以下のコマンドでtalkerを実行し、ストップウォッチを開始します。
   ```
   $ ros2 run stopwatch talker
+  (何も表示されません) 
   ```
 * 実行結果
   ```
@@ -43,7 +44,7 @@ ROS 2のサンプルコードです。
   ```
 * 実行結果
   ```
-  端末1
+  端末1: $ ros2 launch stopwatch stopwatch.lauch.py
   [INFO] [launch]: All log files can be found below /home/ryotarokarikomi/.ros/log/2023-12-29-00-36-39-159630-LAPTOP-KDT91KQF-6260
   [INFO] [launch]: Default logging verbosity is set to INFO
   [INFO] [talker-1]: process started with pid [6261]
