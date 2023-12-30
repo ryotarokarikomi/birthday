@@ -20,6 +20,7 @@ ROS 2のサンプルコードです。
   (何も表示されません) 
   ```
 * 実行結果
+  listenerを実行した端末にタイムが表示されます。
   ```
   端末1: $ ros2 run stopwatch listener
   [INFO] [1703777637.558325501] [listener]: time_msgs.msg.Time(hour=0, minute=0, second=1, sec=1)
