@@ -16,7 +16,7 @@ ROS 2のサンプルコードです。
 * 端末2  
   別の端末で以下のコマンドでtalkerを実行し、ストップウォッチを開始します。
   ```
-  $ ros2 run stopwatch listener
+  $ ros2 run stopwatch talker
   ```
 * 実行結果
   ```
