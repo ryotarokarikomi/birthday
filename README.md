@@ -19,7 +19,7 @@ ROS 2のサンプルコードです。
   $ ros2 run stopwatch talker
   (何も表示されません) 
   ```
-* 実行結果
+* 実行結果  
   listenerを実行した端末にタイムが表示されます。
   ```
   端末1: $ ros2 run stopwatch listener
