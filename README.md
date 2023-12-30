@@ -1,4 +1,4 @@
-# stop_watch[![build_and_test](https://github.com/ryotarokarikomi/stop_watch/actions/workflows/test.yml/badge.svg)](https://github.com/ryotarokarikomi/stop_watch/actions/workflows/test.yml)
+# stopwatch[![test](https://github.com/ryotarokarikomi/stopwatch/actions/workflows/test.yml/badge.svg)](https://github.com/ryotarokarikomi/stopwatch/actions/workflows/test.yml)
 ***ロボットシステム学(課題2)***  
 ROS 2のサンプルコードです。  
 [time_msgs](https://github.com/ryotarokarikomi/time_msgs.git)でこのパッケージで使用する型を設定しています。  
@@ -8,18 +8,19 @@ ROS 2のサンプルコードです。
 # 使い方
 ## ros2 run
 * 端末1  
-  以下のコマンドでtalkerを実行します。
+  以下のコマンドでlistenerを実行し、ストップウォッチを待機状態にします。
   ```
-  $ ros2 run mypkg talker
+  $ ros2 run stopwatch listener
   ```
   (何も表示されません) 
 * 端末2  
-  以下のコマンドでlistenerを実行します。
+  別の端末で以下のコマンドでtalkerを実行し、ストップウォッチを開始します。
   ```
-  $ ros2 run mypkg listener
+  $ ros2 run stopwatch listener
   ```
 * 実行結果
   ```
+  端末1: $ ros2 run stopwatch listener
   [INFO] [1703777637.558325501] [listener]: time_msgs.msg.Time(hour=0, minute=0, second=1, sec=1)
   [INFO] [1703777638.552275732] [listener]: time_msgs.msg.Time(hour=0, minute=0, second=2, sec=2)
   [INFO] [1703777639.551959578] [listener]: time_msgs.msg.Time(hour=0, minute=0, second=3, sec=3)
@@ -36,12 +37,13 @@ ROS 2のサンプルコードです。
   ```
 ## ros2 launch
 * 端末1  
-  以下のコマンドで実行します。
+  以下のコマンドで実行し、ストップウォッチを開始します。
   ```
-  $ ros2 launch mypkg time.lauch.py
+  $ ros2 launch stopwatch stopwatch.lauch.py
   ```
 * 実行結果
   ```
+  端末1
   [INFO] [launch]: All log files can be found below /home/ryotarokarikomi/.ros/log/2023-12-29-00-36-39-159630-LAPTOP-KDT91KQF-6260
   [INFO] [launch]: Default logging verbosity is set to INFO
   [INFO] [talker-1]: process started with pid [6261]
@@ -62,11 +64,10 @@ ROS 2のサンプルコードです。
   ```
 
 # ノード
-## mypkg
-### tlker.py
+## tlker.py
 * メッセージの型を符号なし64ビット整数、トピックを`/time`としてパブリッシャを定義
 * 1秒ごとにトピックを通じてメッセージを送信
-### listener.py
+## listener.py
 * メッセージの型を符号なし64ビット整数、トピックを`/time`としてサブスクライバを定義
 * トピックを通じてメッセージを受信
 
